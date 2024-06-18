@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 :root {
     --primary-color: rgba(0, 163, 251, 1);
     --primary-variant: rgba(8, 132, 215, 1);
@@ -6,7 +9,7 @@
     --on-background: rgba(66, 66, 66, 1);
     --on-background-alt: rgba(66, 66, 66, 0.5);
     --background: rgba(255, 255, 255, 1);
-    --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+    --box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.2);
   }
   
   [data-theme="dark"] {
@@ -27,6 +30,7 @@
   body {
     margin: 0;
     color: var(--on-background);
+    font-family: Mukta, sans-serif;
     background-color: var(--background);
   }
   
@@ -40,11 +44,22 @@
   
   h1 {
     font-size: 100px;
-    margin-bottom: 0;
+    margin-top: 0px;
+    margin-bottom: -20px;
+    padding-bottom: 0px;
   }
   
   h2 {
+    color: var(--on-background-alt);
+    margin-top: 0px;
+    padding-top: 0px;
     font-size: 32px;
+    font-weight: normal;
+  }
+
+  h3 {
+    color: var(--on-background-alt);
+    font-size: 20px;
     font-weight: normal;
   }
   
@@ -52,8 +67,9 @@
   nav {
     z-index: 10;
     position: fixed;
-    font-size: 24px;
-    letter-spacing: 0.5px;
+    font-size: 35px;
+    font-family: Bebas Neue, sans-serif;
+    letter-spacing: 1px;
     padding: 25px;
     width: 100vw;
     background: rgb(255 255 255 / 50%);
@@ -79,8 +95,24 @@
   }
   
   /* About Section */
+  
   .about-container {
     display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 0 30px;
+    margin: 0px;
+  }
+
+  .about-text {
+    flex: 2.5;
+    padding: 10px;
+    margin-left: 140px;
+  }
+
+  .about-image {
+    flex: 1;
+    margin-left: 60px;
   }
   
   .image-container {
@@ -94,11 +126,18 @@
   }
   
   img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
   }
   
-  /* Projects Section */
+  /* Services Section */
+
+  .services-container {
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+  }
+
   .buttons {
     margin-top: 15px;
     margin-bottom: 50px;
