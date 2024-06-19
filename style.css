@@ -13,8 +13,8 @@
   }
   
   [data-theme="dark"] {
-    --primary-color: rgba(32, 254, 225, 1);
-    --primary-variant: rgba(0, 175, 152, 1);
+    --primary-color: rgba(0, 175, 152, 1); 
+    --primary-variant: rgba(32, 254, 225, 1);
     --secondary-color: rgba(238, 96, 164, 1);
     --on-primary: #000;
     --on-background: rgba(255, 255, 255, 0.9);
@@ -288,7 +288,7 @@
   }
   
   input:checked + .slider {
-    background: var(--primary-color);
+    background: var(--secondary-color);
   }
   
   input:checked + .slider::before {
